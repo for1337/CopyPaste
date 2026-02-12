@@ -1,0 +1,49 @@
+## [ .NET / Visual Studio ]
+
+# Cartelle di build e output
+bin/
+obj/
+publish/
+dist/
+
+# File generati da MSBuild (Logs, etc.)
+*.log
+*.binlog
+
+# File utente di Visual Studio (configurazioni locali)
+.vs/
+*.user
+*.userossc
+*.sln.docstates
+
+# File di Rider (JetBrains)
+.idea/
+*.sln.iml
+
+# File di Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Cache dei pacchetti NuGet
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+
+# Environment variables (File segreti che non devono andare online)
+.env
+.env.*
+appsettings.Development.json
+appsettings.Local.json
+
+# File di sistema e OS
+.DS_Store
+Thumbs.db
+
+# Test e Copertura codice
+TestResults/
+*.opencover.xml
+coverage.json
